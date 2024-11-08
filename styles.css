@@ -1,0 +1,150 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+.topo {
+    margin-bottom: -10px;
+    height: 100px;
+}
+
+/* Estilos do contêiner */
+.container {
+    border: 1px solid rgba(57, 150, 190, 0.623);
+    margin-top: 20px;
+    text-align: center;
+    height: auto;
+    width: 400px;
+    background-image: url('https://i.pinimg.com/236x/68/8f/75/688f751a13c992202a34dbb3cc0dec76.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+}
+.container2 {
+    border: 1px solid rgba(57, 150, 190, 0.623);
+    margin-top: 20px;
+    margin-left: 50px;
+    text-align: left;
+    height: auto;
+    width: 500px;
+    padding: 20px; 
+    background-image: url('https://i.pinimg.com/236x/68/8f/75/688f751a13c992202a34dbb3cc0dec76.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+}
+
+/* Estilos do campo de busca */
+.search-container {
+    display: flex;
+    justify-content: center; /* Centraliza o campo de busca */
+    margin-bottom: 20px; /* Espaço abaixo do campo de busca */
+}
+.buscar {
+    margin-top: 2px;
+    width: 80%; /* Largura do campo de busca */
+}
+
+/* Estilos do formulário */
+form {
+    display: block;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+    backdrop-filter: brightness(85%);
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+}
+h1 {
+    margin-top: 60px;
+    font-weight: normal;
+    font-size: 24px;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+label {
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding-left: 10px;
+}
+input, select {
+    background-color: rgba(255, 255, 255, 0.295);
+    height: 30px;
+    line-height: 40px;
+    border-radius: 20px;
+    padding: 0px 20px;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+hr {
+    margin: 0;
+    border: none;
+    border-top: 1px solid #000000;
+}
+button {
+    background-color: rgb(77, 152, 232);
+    height: 28px;
+    line-height: 20px;
+    border-radius: 40px;
+    border: none;
+    margin: 10px 50px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(66, 121, 216);
+}
+button i {
+    pointer-events: none;
+}
+
+/* Estilos dos botões */
+.button-container {
+    display: flex;
+    flex-direction: row; /* Coloca os botões lado a lado */
+    align-items: center; /* Alinha os botões verticalmente */
+}
+
+.button-container button {
+    background-color: rgb(77, 150, 232);
+    margin: 5px;
+    margin-bottom: 8px;
+    color: rgb(0, 0, 0); 
+    border: none;
+    border-radius: 5px;
+    width: 85px; 
+    height: 25px;
+    cursor: pointer; 
+    transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+    background-color: rgb(66, 121, 216); /* Cor mais escura ao passar o mouse no botão Editar */
+}
+
+.button-container button.delete {
+    background-color: #f44336; /* Cor de fundo vermelha para o botão Excluir */
+}
+
+.button-container button.delete:hover {
+    background-color: #e53935; /* Cor mais escura ao passar o mouse no botão Excluir */
+}
